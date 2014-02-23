@@ -1,0 +1,5 @@
+bin/
+gen/
+raw/
+Temp/
+.DS_Store
