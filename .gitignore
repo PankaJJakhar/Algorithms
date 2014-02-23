@@ -3,3 +3,9 @@ gen/
 raw/
 Temp/
 .DS_Store
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
