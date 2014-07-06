@@ -36,6 +36,11 @@ public class SumK {
 		System.out.println("Test case 4 for Sum = 7>>>");
 		findSum(input, 7);
 		System.out.println();
+		
+		input = new int[] { 2, -2, 2, 8, 7, 6, 4, 10, 1, 9 };
+		System.out.println("Test case 5 for Sum = 4>>>");
+		findSum(input, 4);
+		System.out.println();
 	}
 
 	/**
