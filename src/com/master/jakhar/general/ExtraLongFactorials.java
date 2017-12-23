@@ -5,6 +5,14 @@ import java.util.Scanner;
 /**
  * Created by pankajjakhar on 23/12/17.
  *
+ * This algorithm can be used to calculate and store factorial of big numbers.
+ * E.g. Factorial of 100 can not be stored in 64-bit long data type so we need
+ * some bit data types to store and manipulate such big results.
+ *
+ * This algorithm uses Memoization Technique; calling it multiple times in a context
+ * will not re-compute factorial again and again and will give optimal results.
+ * Similar approach can be used to reduce software performance.
+ *
  */
 public class ExtraLongFactorials {
     private static Scanner scanner;
