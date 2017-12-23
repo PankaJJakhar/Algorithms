@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  */
 public class ExtraLongFactorials {
-    private static Scanner mScanner;
+    private static Scanner scanner;
     private static int N;
     private static HashMap<Integer, BigInteger> numberToFactorialValueMap;
     private static int iterationsCount;
@@ -18,10 +18,10 @@ public class ExtraLongFactorials {
 
     private static void process() {
         iterationsCount = 0;
-        mScanner = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         numberToFactorialValueMap = new HashMap<Integer, BigInteger>();
         System.out.print("Enter the number: ");
-        N = mScanner.nextInt();
+        N = scanner.nextInt();
         BigInteger result = calculateFactorial(N);
         //System.out.println(result.toString());
         System.out.printf("\nFactorial of %d: " + result.toString(), N);
