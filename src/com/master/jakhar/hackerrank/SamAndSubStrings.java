@@ -54,7 +54,6 @@ public class SamAndSubStrings {
 
     private static void run() {
         scanner = new Scanner(System.in);
-        int exp = (int) Math.pow(10, 9) + 7;
 
         //System.out.print("\nEnter input String(must be a number): ");
         String query = scanner.next();
@@ -64,6 +63,12 @@ public class SamAndSubStrings {
         System.out.println(sum % MOD);
     }
 
+    /**
+     * @implNote Takes the input string of integers and stores it in reverse order
+     *           in an array of integers for the puspose of implementation.
+     * @param query input string of integers.
+     * @return array of integers.
+     */
     private static int[] getInputArray(String query) {
         int lengthQuery = query.length();
         int[] inputArray = new int[lengthQuery];
@@ -81,10 +86,11 @@ public class SamAndSubStrings {
         long multiplier = 1;
         for(int index = 0; index < arrayLength; index++) {
             int number = inputArray[index];
-            //long localSum = (number * (arrayLength - index) * multiplier);
+
+            // Find the total sum.
             sum = (sum + (number * (arrayLength - index) * multiplier)) % MOD;
 
-            //long powerTen = (long) (Math.pow(10, (index + 1)));
+            // Update the multipler for series: 1, 11, 111, 1111... and so on for next calculation.
             multiplier = (multiplier * 10 + 1) % MOD;
         }
 
